@@ -1,87 +1,51 @@
-![Dynamic Island for Windows Banner](src/Dynamic%20Island%200.jpg)
+# Dynamic Island para Windows 🪟
 
-# Dynamic Island for Windows
+Una isla dinámica fluida y altamente personalizable para Windows, construida con Python y PyQt6. Inspirada en el estilo de iOS, pero adaptada para ser un centro de control completo en tu escritorio.
 
-A sleek, fluid, and highly customizable Dynamic Island for Windows built with Python and PyQt6.
+## ✨ Características
 
-# Scroll on the Panels !
+- **Animaciones Fluidas:** Transiciones suaves entre estados (Idle, Hover, Música, Notificaciones).
+- **Clima en Vivo:** Muestra el ícono del sol/luna y la temperatura actual directamente en la isla cerrada.
+- **Control de Audio:** Slider de volumen en tiempo real con sincronización al sistema, más botones para mutear el micrófono y ensordecer.
+- **Media Controls:** Controles de reproducción integrados que detectan el color de la carátula del álbum para adaptar la interfaz.
+- **Calendario y Tareas:** Panel de actividades diarias y progreso del mes.
+- **Eventos del Teclado:** Notificaciones visuales cuando activas/desactivas Bloq Mayús o Bloq Num.
+- **Fecha y Hora en Español:** Formato adaptado a nuestro idioma.
+- **Estilos Personalizables:** Diferentes estilos de isla (Por Defecto, Notch Nook) y animaciones (Barrido Neón, Burbujas Fluidas, Borde LED).
 
-## Features
+## 📸 Vistas Previas
 
-- **Fluid Animations**: Smooth transitions between states (Idle, Hover, Music, Notifications).
-- **System Monitoring**: Real-time CPU and RAM usage tracking.
-- **Media Controls**: Integrated media playback controls with album art accent color detection.
-- **Event Notifications**: Visual feedback for Caps Lock/Num Lock changes and system notifications.
-- **Customizable Appearance**: Choose between different animation styles (Glow Sweep, Fluid Blobs, Neon Border) and island styles (Default, Liquid Glass).
-- **Auto-start**: Option to start with Windows.
+### Vista Principal y Clima
+La isla muestra la fecha y hora, junto con la temperatura actual y un ícono representativo del clima.
 
-## Previews
+### Reproductor de Música
+Controles multimedia que se adaptan dinámicamente al color de la carátula de la canción que estés escuchando.
 
-### Default View & Smart Theming
-The island displays the current day and time by default. Its intelligent engine auto-detects your wallpaper's accent color to ensure the UI feels like a native part of your desktop.
+### Control de Audio
+![Audio Panel](src/Dynamic%20Island%203.jpg)
+Administra el volumen general y silencia tu micrófono rápidamente.
 
-![Default State](src/Dynamic%20Island%201.jpg)
+## 📥 Descarga
 
-### Smart Notifications & Keyboard Status
-Stay informed with instant notification detection. The island also provides sleek visual cues when Caps Lock or Num Lock is toggled.
+Si no tienes Python instalado, puedes descargar el ejecutable (`.exe`) directamente desde la sección de **[Releases](https://github.com/luisbpm16/ventanas-de-isla-dinamica/releases)**.
 
-![Notifications](src/Dynamic%20Island%202.jpg)
+## 🛠️ Instalación (Desde el código fuente)
 
-### Interactive Information Panels
-Access a variety of rich widgets including real-time Weather, a detailed Calendar with progress tracking, comprehensive System Monitoring (CPU, RAM, Storage, Network), and your Daily Tasks.
-
-![Information Panels](src/Dynamic%20Island%203.jpg)
-
-### Fluid Media Player
-Control your music with ease. The media player's background and animations dynamically adapt their color palette to match the album art of the currently playing track.
-
-![Music Player](src/Dynamic%20Island%205.jpg)
-
-### Basics Control Hub
-A dedicated panel for essential system tools. Quickly access Power, Sleep, and Restart controls through a fluid, scrollable interface.
-
-![Basics Panel](src/Dynamic%20Island%207.jpg)
-
-### Deep Customization
-Tailor the experience to your liking. Right-click the island to access settings for animation styles, island designs, and location preferences.
-
-![Context Menu](src/Dynamic%20Island%204.jpg)
-![Settings](src/Dynamic%20Island%206.jpg)
-
-### Notch Nook Style
-For those who prefer a more integrated look, the "Notch Nook" style replaces the floating island with a sleek, top-centered notch that anchors directly to the screen edge.
-
-![Notch Nook](src/Notch_Nook.jpg)
-
-### Showcase Gallery
-
-![Show1](src/Dynamic%20Island1.jpg)
-![Show2](src/Dynamic%20Island3.jpg)
-![Show3](src/Dynamic%20Island4.jpg)
-![Show4](src/Dynamic%20Island5.jpg)
-
-## Installation
-
-1. Clone the repository:
+1. Clona el repositorio:
    ```bash
-   git clone https://github.com/rajsriv/dynamic-island-for-windows.git
-   ```
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the application:
-   ```bash
-   python main.py
-   ```
+   git clone https://github.com/luisbpm16/ventanas-de-isla-dinamica.git
+Instala las dependencias necesarias:
+pip install -r requisitos.txt
+Ejecuta la aplicación:
+python main.py
 
-## Dependencies
+Dependencias:
+PyQt6
+QtAwesome
+psutil
+winsdk (para monitorización de medios y notificaciones)
+pycaw (para el control de audio)
+comtypes
 
-- PyQt6
-- QtAwesome
-- psutil
-- winsdk (for media and notification monitoring)
-
-## License
-
-[MIT License](LICENSE)
+Licencia
+Este proyecto está bajo la Licencia MIT.
